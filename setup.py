@@ -7,7 +7,7 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 # Build setup
 setup(
     name='deep_sort',
-    version='1.1.0',
+    version='1.1.1',
     packages=['deep_sort', 'deep_sort_tools'],
     license='GNU General Public License v3 (GPLv3)',
     author='Nicolai Wojke and Alex Bewley',
