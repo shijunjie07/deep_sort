@@ -8,13 +8,21 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 setup(
     name='deep_sort',
     version='1.1.0',
-    packages=['deep_sort', 'tools', 'application_util'],
+    packages=['deep_sort', 'deep_sort_tools'],
     license='GNU General Public License v3 (GPLv3)',
+    author='Nicolai Wojke and Alex Bewley',
     url='https://github.com/mk-michal/deep_sort',
     description='Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT)',
      setup_requires=[
         'setuptools>=18.0'
     ],
+    package_data={
+        'deep_sort': [
+            'resources/*',
+        ]
+    },
     install_requires=[],  # requirements.txt is included
     include_package_data=True,
 )
+
+
