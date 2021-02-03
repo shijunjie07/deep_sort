@@ -1,5 +1,8 @@
 # Deep SORT
 
+This fork updates the DeepSort to be compatible with TensorFlow 2.4. The original repository is 
+not updated and is still dependant on TensorFlow 1.x, which are not really compatible between each other without additional changes.
+
 ## Introduction
 
 This repository contains code for *Simple Online and Realtime Tracking with a Deep Association Metric* (Deep SORT).
@@ -16,13 +19,13 @@ needed to run the tracker:
 * sklearn
 * OpenCV
 
-Additionally, feature generation requires TensorFlow (>= 1.0).
+Additionally, feature generation requires TensorFlow (>= 2.4).
 
 ## Installation
 
 First, clone the repository:
 ```
-git clone https://github.com/nwojke/deep_sort.git
+git clone https://github.com/mk-michal/deep_sort.git
 ```
 Then, download pre-generated detections and the CNN checkpoint file from
 [here](https://drive.google.com/open?id=18fKzfqnqhqW3s9zwsCbnVJ5XF2JFeqMp).
