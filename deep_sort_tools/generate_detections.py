@@ -94,9 +94,9 @@ class ImageEncoder(object):
         tf.import_graph_def(graph_def, name="net")
 
         self.input_var = tf.compat.v1.get_default_graph().get_tensor_by_name(
-            f"net/{input_name}:0")
+            f"{input_name}:0")
         self.output_var = tf.compat.v1.get_default_graph().get_tensor_by_name(
-            f"net/{output_name}:0")
+            f"{output_name}:0")
         assert len(self.output_var.get_shape()) == 2
         assert len(self.input_var.get_shape()) == 4
         self.feature_dim = self.output_var.get_shape().as_list()[-1]
